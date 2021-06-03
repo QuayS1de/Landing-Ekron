@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Matroska";
+  src: url(../../fonts/Matroska/Matroska.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+.content {
+  max-width: 100%;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+.content .nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.content .nav .nav_logo {
+  font-family: "Matroska";
+  font-size: 32px;
+  color: #337ab7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.content .nav .nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.content .nav .nav_list li {
+  padding: 15px;
+  background-color: transparentize;
+  cursor: pointer;
+  -webkit-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
+.content .nav .nav_list li:hover {
+  color: #337ab7;
+  -webkit-transition: color .1s ease;
+  transition: color .1s ease;
+}
+
+.content .nav .nav_list li a {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content .nav .nav_list li a.active {
+  color: #337ab7;
+}
+
+
+
+
+
+
+
+
+/*-------------------Slick Slider--------------------*/
+.header-slider {
+  margin-bottom: 70px;
+}
+
+.slider {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+}
+
+.slider-item {
+  outline: none;
+}
+
+.slider-item .pic1 {
+  background-image: url(../../img/1-1.jpg);
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+
+
+}
+
+.slider-item .pic2 {
+  background-image: url(../../img/2-1.jpg);
+  background-size: cover;
+  height: 650px;
+  width: 100%
+}
+
+.slider-item .pic3 {
+  background-image: url(../../img/3-1.jpg);
+  background-size: cover;
+  height: 650px;
+  width: 100%
+}
+
+/* Слайдер */
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: -30px 0 0 0;
+}
+
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+  left: 20px;
+  background: url(../../img/left-arrow.svg) 0 0 / 100% no-repeat;
+  z-index: 10001;
+}
+
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+  right: 20px;
+  background: url(../../img/right-arrow.svg) 0 0 / 100% no-repeat;
+  z-index: 10001;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Элемент точки */
+.slider .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+}
+
+.slider .slick-dots li button:active {
+  transform: scale(1.2);
+}
+
+
+/*----------Text for pictures in slider----------*/
+
+.slider-item div p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0097C2;
+}
+
+.slider-item div p span {
+  color: #797979;
+}
+
+.slider-item div h1 {
+  font-size: 24px;
+}
