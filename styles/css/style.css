@@ -8,26 +8,36 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
+  height: 10000px;
+}
+
+.content2 {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .content {
   max-width: 100%;
-  background-color: #eee;
   margin: 0 auto;
 }
 
 .content .nav {
+  color: #fff;
   max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content .nav .nav_logo {
@@ -35,22 +45,23 @@ body {
   font-size: 32px;
   color: #337ab7;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
 .content .nav .nav_list {
+  margin-left: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content .nav .nav_list li {
@@ -77,90 +88,147 @@ body {
   color: #337ab7;
 }
 
-
-
-
-
-
-
-
-/*-------------------Slick Slider--------------------*/
 .header-slider {
   margin-bottom: 70px;
 }
 
-.slider {
+.header-slider .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 0;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   position: relative;
 }
 
-.slider-item {
+.header-slider .slider .slider-item {
   outline: none;
+  position: absolute;
 }
 
-.slider-item .pic1 {
+.header-slider .slider .slider-item .title-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 225px;
+}
+
+.header-slider .slider .slider-item .title-item h1 {
+  z-index: 10;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header-slider .slider .slider-item .title-item p {
+  z-index: 10;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header-slider .slider .slider-item .title-item .buttons-info {
+  z-index: 10;
+}
+
+.header-slider .slider .slider-item .title-item .buttons-info a {
+  display: inline-block;
+  padding: 13px 25px;
+  text-transform: capitalize;
+  margin-right: 20px;
+  background-color: #228ae6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.header-slider .slider .slider-item .title-item .buttons-info a:first-child:hover {
+  background-color: #fff;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  color: #000;
+}
+
+.header-slider .slider .slider-item .title-item .buttons-info a:last-child {
+  margin-right: 0;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.header-slider .slider .slider-item .title-item .buttons-info a:last-child:hover {
+  background-color: #228ae6;
+  border-color: #228ae6;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.header-slider .slider .slider-item .slider-item__pic1__title-item {
+  text-align: center;
+  padding-top: 275px;
+}
+
+.header-slider .slider .slider-item .slider-item__pic2__title-item {
+  text-align: right;
+  max-width: 600px;
+  margin-right: 200px;
+}
+
+.header-slider .slider .slider-item .slider-item__pic3__title-item {
+  text-align: left;
+  max-width: 600px;
+  padding-right: 100px;
+  margin-left: 200px;
+}
+
+.header-slider .slider .slider-item .pic1 {
   background-image: url(../../img/1-1.jpg);
   background-size: cover;
-  height: 650px;
+  height: 725px;
   width: 100%;
-
-
 }
 
-.slider-item .pic2 {
+.header-slider .slider .slider-item .pic2 {
   background-image: url(../../img/2-1.jpg);
   background-size: cover;
-  height: 650px;
-  width: 100%
+  height: 725px;
+  width: 100%;
 }
 
-.slider-item .pic3 {
+.header-slider .slider .slider-item .pic3 {
   background-image: url(../../img/3-1.jpg);
   background-size: cover;
-  height: 650px;
-  width: 100%
+  height: 725px;
+  width: 100%;
 }
 
-/* Слайдер */
-.slick-slider {}
-
-/* Слайдер запущен */
-.slick-slider.slick-initialized {}
-
-/* Слайдер с точками */
-.slick-slider.slick-dotted {}
-
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
-}
-
-/* Лента слайдов */
-.slick-track {
-  display: flex;
-  align-items: flex-start;
-}
-
-/* Слайд */
-.slick-slide {}
-
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {}
-
-/* Слайд основной */
-.slick-slide.slick-current {}
-
-/* Слайд по центру */
-.slick-slide.slick-center {}
-
-/* Клонированный слайд */
-.slick-slide.slick-cloned {}
-
-/* Стрелка */
-.slider .slick-arrow {
+.header-slider .slider .slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -173,45 +241,43 @@ body {
   margin: -30px 0 0 0;
 }
 
-/* Стрелка влево */
-.slider .slick-arrow.slick-prev {
+.header-slider .slider .slick-arrow.slick-prev {
   left: 20px;
-  background: url(../../img/left-arrow.svg) 0 0 / 100% no-repeat;
+  background: url(../../img/left-arrow.svg) 0 0/100% no-repeat;
   z-index: 10001;
 }
 
-/* Стрелка вправо */
-.slider .slick-arrow.slick-next {
+.header-slider .slider .slick-arrow.slick-next {
   right: 20px;
-  background: url(../../img/right-arrow.svg) 0 0 / 100% no-repeat;
+  background: url(../../img/right-arrow.svg) 0 0/100% no-repeat;
   z-index: 10001;
 }
 
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {}
-
-/* Точки (булиты) */
-.slider .slick-dots {
+.header-slider .slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
 }
 
-.slider .slick-dots li {
+.header-slider .slider .slick-dots li {
   list-style: none;
   margin: 0 10px;
 }
 
-/* Активная точка */
-.slider .slick-dots li.slick-active button {
+.header-slider .slider .slick-dots li.slick-active button {
   border: 1px solid black;
   background-color: #fff;
   border-radius: 50%;
 }
 
-/* Элемент точки */
-.slider .slick-dots li button {
+.header-slider .slider .slick-dots li button {
   font-size: 0;
   width: 10px;
   height: 10px;
@@ -220,26 +286,32 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-
 }
 
-.slider .slick-dots li button:active {
-  transform: scale(1.2);
+.header-slider .slider .slick-dots li:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-
-/*----------Text for pictures in slider----------*/
-
-.slider-item div p {
-  font-size: 12px;
-  font-weight: 500;
-  color: #0097C2;
+.slick-list {
+  overflow: hidden;
 }
 
-.slider-item div p span {
-  color: #797979;
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.slider-item div h1 {
-  font-size: 24px;
+.bg-fon {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

@@ -8,11 +8,11 @@ $(document).ready(function () {
         slidesToScroll: 1,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000,
         responsive: [{
             breakpoint: 1000,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
             }
         }, {
             breakpoint: 600,

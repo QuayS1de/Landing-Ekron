@@ -6,11 +6,21 @@
 body
     font-family: "Montserrat", sans-serif
     font-size: 13px
+    height: 10000px
+
+.content2
+    position: fixed
+    z-index: 100000
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+
 .content
+    // background-color: #e2ee
     max-width: 100%
-    background-color: #eee
     margin: 0 auto
     .nav
+        color: #fff
         max-width: 1200px
         margin: 0 auto
         display: flex
@@ -24,6 +34,7 @@ body
             cursor: pointer
         .nav_list
             // width: 100%
+            margin-left: 200px
             display: flex
             align-items: center
             justify-content: space-between
@@ -42,3 +53,149 @@ body
                     text-transform: uppercase
                     &.active
                         color: #337ab7
+
+.header-slider
+    margin-bottom: 70px
+    .slider
+        display: flex
+        min-width: 0
+        flex-direction: column
+        margin: 0
+        position: relative
+        .slider-item
+            outline: none
+            position: absolute
+            .title-item
+                display: flex
+                max-width: 800px
+                flex-direction: column
+                margin: 0 auto
+                flex-wrap: wrap
+                padding-top: 225px
+                h1
+                    z-index: 10
+                    font-size: 45px
+                    line-height: 55px
+                    font-weight: 700
+                    margin-bottom: 20px
+                    color: #fff
+                    text-transform: uppercase
+                    user-select: none
+                p
+                    z-index: 10
+                    font-size: 18px
+                    margin-bottom: 30px
+                    font-weight: 500
+                    color: #fff
+                    user-select: none
+                .buttons-info
+                    z-index: 10
+                    a
+                        display: inline-block
+                        padding: 13px 25px
+                        text-transform: capitalize
+                        margin-right: 20px
+                        background-color: #228ae6
+                        color: #fff
+                        border: none
+                        border-radius: 5px
+                        cursor: pointer
+                        transition: all .3s ease-in
+                        &:first-child
+                            &:hover
+                                background-color: #fff
+                                transition: all .3s ease-out
+                                color: #000
+                        &:last-child
+                            margin-right: 0
+                            border: 1px solid #fff
+                            background-color: transparent
+                            &:hover
+                                background-color: #228ae6
+                                border-color: #228ae6
+                                transition: all .3s ease-out
+
+            .slider-item__pic1__title-item
+                text-align: center
+                padding-top: 275px
+            .slider-item__pic2__title-item
+                text-align: right
+                max-width: 600px
+                margin-right: 200px
+            .slider-item__pic3__title-item
+                text-align: left
+                max-width: 600px
+                padding-right: 100px
+                margin-left: 200px
+            .pic1
+                background-image: url(../../img/1-1.jpg)
+                background-size: cover
+                height: 725px
+                width: 100%
+            .pic2
+                background-image: url(../../img/2-1.jpg)
+                background-size: cover
+                height: 725px
+                width: 100%
+            .pic3
+                background-image: url(../../img/3-1.jpg)
+                background-size: cover
+                height: 725px
+                width: 100%
+        .slick-arrow
+            position: absolute
+            top: 50%
+            z-index: 10
+            font-size: 0
+            width: 30px
+            height: 60px
+            border: none
+            outline: none
+            cursor: pointer
+            margin: -30px 0 0 0
+        .slick-arrow.slick-prev
+            left: 20px
+            background: url(../../img/left-arrow.svg) 0 0 / 100% no-repeat
+            z-index: 10001
+        .slick-arrow.slick-next
+            right: 20px
+            background: url(../../img/right-arrow.svg) 0 0 / 100% no-repeat
+            z-index: 10001
+        .slick-dots
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 0
+            li
+                list-style: none
+                margin: 0 10px
+                &.slick-active button
+                    border: 1px solid black
+                    background-color: #fff
+                    border-radius: 50%
+                button
+                    font-size: 0
+                    width: 10px
+                    height: 10px
+                    background-color: black
+                    border-radius: 50%
+                    border: none
+                    outline: none
+                    cursor: pointer
+                &:active
+                    transform: scale(1.2)
+.slick-list
+    overflow: hidden
+
+.slick-track
+    display: flex
+    align-items: flex-start
+
+.bg-fon
+    background-color: rgba(0,0,0,.6)
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
