@@ -7,8 +7,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   height: 10000px;
+  letter-spacing: 0.4px;
 }
 
 .content2 {
@@ -202,7 +203,7 @@ body {
 
 .header-slider .slider .slider-item .slider-item__pic3__title-item {
   text-align: left;
-  max-width: 600px;
+  max-width: 700px;
   padding-right: 100px;
   margin-left: 200px;
 }
@@ -314,4 +315,151 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.section .pre-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .pre-section1 .pre-section1__blocks-shadow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section .pre-section1 .pre-section1__our-company-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eee;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:first-child h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:first-child p {
+  margin-bottom: 15px;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:first-child ul li i {
+  color: #228ae6;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right h4 {
+  font-size: 18px;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right ul li {
+  margin: 20px;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right ul li a {
+  padding: 8px;
+  background-color: #228ae6;
+  border-radius: 20%;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right ul li a i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__right-side {
+  position: relative;
+  width: 100%;
+  background-image: url("../../img/video.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__right-side .pre-section1__our-company-card__right-side_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__right-side .play {
+  padding: 20px;
+  border-radius: 30%;
+  background-color: #228ae6;
+  color: #fff;
+  cursor: pointer;
+  border: 5px solid #fff;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }

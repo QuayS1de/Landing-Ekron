@@ -5,8 +5,9 @@
     font-weight: normal
 body
     font-family: "Montserrat", sans-serif
-    font-size: 13px
+    font-size: 14px
     height: 10000px
+    letter-spacing: 0.4px
 
 .content2
     position: fixed
@@ -124,7 +125,7 @@ body
                 margin-right: 200px
             .slider-item__pic3__title-item
                 text-align: left
-                max-width: 600px
+                max-width: 700px
                 padding-right: 100px
                 margin-left: 200px
             .pic1
@@ -199,3 +200,82 @@ body
     top: 0
     left: 0
     z-index: 0
+
+.section
+    .pre-section1
+        display: flex
+        margin: 0 auto
+        max-width: 1100px
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .pre-section1__blocks-shadow
+            display: flex
+            justify-content: space-between
+        .pre-section1__our-company-card
+            display: flex
+            width: 100%
+            justify-content: space-between
+            margin-top: 100px
+            .pre-section1__our-company-card__left-side
+                display: flex
+                flex-direction: column
+                background-color: #eee
+                >div
+                    &:first-child
+                        h2
+                            font-size: 30px
+                            margin-bottom: 15px
+                        p
+                            margin-bottom: 15px
+                        ul
+                            li
+                                i
+                                    color: #228ae6
+                    &:last-child
+                        display: flex
+                        align-items: center
+                        // justify-content: space-evenly
+                        margin-top: 30px
+                        .desribe-card-right
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            justify-content: space-between
+                            h4
+                                font-size: 18px
+                            ul
+                                display: flex
+                                justify-content: space-around
+                                align-items: center
+                                margin-top: 20px
+                                li
+                                    margin: 20px
+                                    a
+                                        padding: 8px
+                                        background-color: #228ae6
+                                        border-radius: 20%
+                                        i
+                                            font-size: 16px
+                                            color: #fff
+
+            .pre-section1__our-company-card__right-side
+                position: relative
+                width: 100%
+                background-image: url('../../img/video.jpg')
+                background-position: center
+                background-size: contain
+                background-repeat: no-repeat
+                .pre-section1__our-company-card__right-side_play
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                .play
+                    padding: 20px
+                    border-radius: 30%
+                    background-color: #228ae6
+                    color: #fff
+                    cursor: pointer
+                    border: 5px solid #fff
+                    transition: all 1s ease
