@@ -30,4 +30,8 @@ $(document).ready(function () {
         let dataColor = $(e.target).attr('data-color')
         $('.buttons-info a:first-child').css('backgroundColor', dataColor)
     })
+
+    $(document).on('mouseover', '.choose-color', function () {
+        $('.choose-color').css('backgroundColor', '#e1e')
+    })
 })
