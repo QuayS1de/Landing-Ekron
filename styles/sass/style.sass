@@ -7,6 +7,9 @@ body
     font-family: "Montserrat", sans-serif
     font-size: 14px
     letter-spacing: 0.4px
+    line-height: 28px
+    height: 4000px
+
 .page
     overflow: hidden
 .content2
@@ -239,7 +242,8 @@ body
             .pre-section1__our-company-card__left-side
                 display: flex
                 flex-direction: column
-                background-color: #eee
+                max-width: 100%
+                // background-color: #eee
                 >div
                     &:first-child
                         h2
@@ -247,8 +251,11 @@ body
                             margin-bottom: 15px
                         p
                             margin-bottom: 15px
+                            opacity: 0.8
                         ul
                             li
+                                opacity: 0.8
+                                margin-bottom: 15px
                                 i
                                     color: #228ae6
                     &:last-child
@@ -283,7 +290,7 @@ body
                 width: 100%
                 background-image: url('../../img/video.jpg')
                 background-position: center
-                background-size: contain
+                background-size: cover
                 background-repeat: no-repeat
                 .pre-section1__our-company-card__right-side_play
                     position: absolute

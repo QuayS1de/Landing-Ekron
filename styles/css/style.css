@@ -9,6 +9,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   letter-spacing: 0.4px;
+  line-height: 28px;
+  height: 4000px;
 }
 
 .page {
@@ -402,7 +404,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #eee;
+  max-width: 100%;
 }
 
 .section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:first-child h2 {
@@ -411,6 +413,12 @@ body {
 }
 
 .section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:first-child p {
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:first-child ul li {
+  opacity: 0.8;
   margin-bottom: 15px;
 }
 
@@ -480,7 +488,7 @@ body {
   width: 100%;
   background-image: url("../../img/video.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
