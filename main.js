@@ -24,4 +24,10 @@ $(document).ready(function () {
         }]
 
     });
+
+    /*Настройка блока цветных кнопок*/
+    $(document).on('click', '.choose-your-color', function (e) {
+        let dataColor = $(e.target).attr('data-color')
+        $('.buttons-info a:first-child').css('backgroundColor', dataColor)
+    })
 })

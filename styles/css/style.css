@@ -515,3 +515,73 @@ body {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
+
+.choose-color {
+  max-width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 25px;
+  background-color: #eee;
+}
+
+.choose-color > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1px;
+}
+
+.choose-color .choose-your-color {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.choose-color .color-blue {
+  background-color: #1195a7;
+}
+
+.choose-color .color-lightGreen {
+  background-color: #78d443;
+}
+
+.choose-color .color-orange {
+  background-color: #ce9429;
+}
+
+.choose-color .color-green {
+  background-color: #177e39;
+}
+
+.choose-color .color-darkOrange {
+  background-color: #b97425;
+}
+
+.choose-color .color-darkBlue {
+  background-color: #1c0c63;
+}
+
+.choose-color .color-red {
+  background-color: #a12f2f;
+}
+
+.choose-color .color-purple {
+  background-color: #a211a7;
+}
