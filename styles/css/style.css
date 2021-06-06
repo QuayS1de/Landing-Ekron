@@ -17,13 +17,18 @@ body {
   overflow: hidden;
 }
 
-.content2 {
+.content3 {
+  width: 100%;
   position: fixed;
   z-index: 100000;
   top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+.content2 {
+  background-color: #181818;
 }
 
 .content {
@@ -92,10 +97,6 @@ body {
 
 .content .nav .nav_list li a.active {
   color: #337ab7;
-}
-
-.header-slider {
-  margin-bottom: 70px;
 }
 
 .header-slider .slider {
@@ -322,6 +323,13 @@ body {
   z-index: 0;
 }
 
+.section {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .section .pre-section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,7 +524,108 @@ body {
           transform: scale(0.9);
 }
 
-.choose-color {
+.section2 {
+  width: 100%;
+  background-image: url("../../img/backgroundPhone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section2 .pre-section2 {
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section2 .pre-section2 .pre-section2__blocks-placement {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .pre-section2 .pre-section2__blocks-placement > div {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  -webkit-box-shadow: 0 0 10px #ffffff84;
+          box-shadow: 0 0 10px #ffffff84;
+  min-width: 23%;
+}
+
+.section2 .pre-section2 .pre-section2__blocks-placement > div:last-child {
+  margin-right: 0;
+}
+
+.section2 .pre-section2 .pre-section2__blocks-placement > div i {
+  font-size: 55px;
+  padding: 15px 0;
+  color: #228ae6;
+}
+
+.section2 .pre-section2 .pre-section2__blocks-placement > div h1 {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 15px 0;
+}
+
+.section2 .pre-section2 .pre-section2__blocks-placement > div p {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.choose-color-blocks-fixed .choose-color-blocks {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 290px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.choose-color-blocks-fixed .choose-color-blocks .choose-color-cog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 10px 5px 10px;
+  background-color: #228ae6;
+  cursor: pointer;
+}
+
+.choose-color-blocks-fixed .choose-color-blocks .choose-color-cog i {
+  font-size: 30px;
+  -webkit-animation: rotating 5s linear infinite;
+          animation: rotating 5s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.choose-color-blocks-fixed .choose-color-blocks .choose-color {
   max-width: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,10 +641,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 25px;
-  background-color: #eee;
+  background-color: #d3d3d3;
 }
 
-.choose-color > div {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,43 +654,72 @@ body {
   margin: 1px;
 }
 
-.choose-color .choose-your-color {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .choose-your-color {
   width: 33px;
   height: 33px;
   border-radius: 50%;
   background-color: black;
   margin: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.choose-color .color-blue {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .choose-your-color:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .choose-your-color:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-blue {
   background-color: #1195a7;
 }
 
-.choose-color .color-lightGreen {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-lightGreen {
   background-color: #78d443;
 }
 
-.choose-color .color-orange {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-orange {
   background-color: #ce9429;
 }
 
-.choose-color .color-green {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-green {
   background-color: #177e39;
 }
 
-.choose-color .color-darkOrange {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-darkOrange {
   background-color: #b97425;
 }
 
-.choose-color .color-darkBlue {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-darkBlue {
   background-color: #1c0c63;
 }
 
-.choose-color .color-red {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-red {
   background-color: #a12f2f;
 }
 
-.choose-color .color-purple {
+.choose-color-blocks-fixed .choose-color-blocks .choose-color .color-purple {
   background-color: #a211a7;
+}
+
+.transform-color-blocks {
+  -webkit-transform: translate(-84%, 0);
+          transform: translate(-84%, 0);
+}
+
+.hover-bg:hover {
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
