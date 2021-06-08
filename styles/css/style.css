@@ -720,8 +720,8 @@ body {
 
 .hover-bg:hover {
   background-color: #fff;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 1.1s ease;
+  transition: all 1.1s ease;
 }
 
 .section3 {
@@ -734,14 +734,8 @@ body {
   text-align: center;
 }
 
-.section3 .pre-section3 h1::after {
-  display: block;
-  content: "";
-  max-width: 300px;
-  height: 1px;
-  background-color: #000;
-  margin: 0 auto;
-  margin-top: 5px;
+.section3 .pre-section3 .header-slider {
+  margin-top: 40px;
 }
 
 .section3 .slider2 {
@@ -757,6 +751,12 @@ body {
   position: relative;
 }
 
+.section3 .slider2 .slider-item {
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  margin: 10px;
+}
+
 .section3 .slider2 .slider-item img {
   width: 350px;
   height: 250px;
@@ -764,4 +764,21 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.title-section h1::after {
+  position: relative;
+  display: block;
+  content: "";
+  max-width: 100px;
+  height: 2px;
+  background-color: #228ae6;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.title-section p {
+  max-width: 50%;
+  margin: 0 auto;
 }
