@@ -86,61 +86,50 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 
-    $(document).on('mouseover', '.block-box', function () {
-        // $(this).addClass('block-box-adding');
-        // $('.block-box-add').addClass('block-box-adding')
+    function oversize(classNameOut, classNameIn) {
+        let nameclassOutside = '.' + classNameOut
+        let nameclass = '.' + classNameIn
 
-        function oversize() {
-            // $('.block-box-adding').css('height', '250px')
+        $(document).on('mouseover', nameclassOutside, function () {
             intervalOver = setInterval(function () {
-                console.log($('.block-box-adding').innerWidth())
-                if (($('.block-box-adding').innerWidth() < $('.block-box').innerWidth()) && ($('.block-box-adding').innerHeight() < $('.block-box').innerHeight())) {
-                    let num = $('.block-box-adding').innerWidth()
+                console.log($(nameclass).innerWidth())
+                if (($(nameclass).innerWidth() < $(nameclassOutside).innerWidth()) && ($(nameclass).innerHeight() < $(nameclassOutside).innerHeight())) {
+                    let num = $(nameclass).innerWidth()
                     num = num + 5
                     let numb = num + 'px'
-                    $('.block-box-adding').css('width', numb)
-                    $('.block-box-adding').css('height', numb)
-                } else if ($('.block-box-adding').innerWidth() == $('.block-box').innerWidth() || $('.block-box-adding').innerWidth() > $('.block-box').innerWidth()) {
-                    $('.block-box-adding').css('width', $('.block-box').innerWidth() + 'px')
-                    $('.block-box-adding').css('height', $('.block-box').innerHeight() + 'px')
+                    $(nameclass).css('width', numb)
+                    $(nameclass).css('height', numb)
+                } else if (($(nameclass).innerWidth() == $(nameclassOutside).innerWidth() || $(nameclass).innerWidth() > $(nameclassOutside).innerWidth()) && (($(nameclass).innerHeight() == $(nameclassOutside).innerHeight() || $(nameclass).innerHeight() > $(nameclassOutside).innerHeight()))) {
+                    $(nameclass).css('width', $(nameclassOutside).innerWidth() + 'px')
+                    $(nameclass).css('height', $(nameclassOutside).innerHeight() + 'px')
                 }
 
 
-                if ($('.block-box-adding').innerWidth() == $('.block-box').innerWidth()) {
-                    clearInterval(intervalOver)
-                }
+                // if ($(nameclass).innerWidth() == $(nameclassOutside).innerWidth()) {
+                //     clearInterval(intervalOver)
+                // }
 
-            }, 10)
+            }, 1)
 
 
-        }
-        oversize()
+        })
+    }
+    oversize('block-box-1', 'box-1')
+    oversize('block-box-2', 'box-2')
+    oversize('block-box-3', 'box-3')
 
-    })
 
-    $(document).on('mouseout', '.block-box', function (e) {
-        // $(this).addClass('block-box-adding');
-        // $('.block-box-add').addClass('block-box-adding')
-        for (let elem of $('.block-box-adding')) {
-            function downsize() {
-                // $('.block-box-adding').css('height', '250px')
-                setInterval(function () {
-                    // console.log($('.block-box-adding').innerWidth())
-                    if (($(elem).innerWidth() > 0) && ($(elem).innerHeight() > 0)) {
-                        let num = $(elem).innerWidth()
-                        num = num - 5
-                        let numb = num - 'px'
-                        $(elem).css('width', numb)
-                        $(elem).css('height', numb)
-                    } else if ($(elem).innerWidth() == 0) {
-                        $(elem).css('width', $('.block-box').innerWidth() + 'px')
-                        $(elem).css('height', $('.block-box').innerHeight() + 'px')
-                    }
-                }, 10)
-            }
-            downsize()
-        }
-    })
+
+
+
+
+    // $(document).on('mouseout', '.block-box-1', function (e) {
+    //     $('.box-1').animate({
+    //         width: 0,
+    //         height: 0
+    //     })
+    // }, 1, )
+
 
     $(document).ready(function () {
         window.addEventListener('scroll', animOnScroll)
