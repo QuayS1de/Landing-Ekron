@@ -86,6 +86,62 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 
+    $(document).on('mouseover', '.block-box', function () {
+        // $(this).addClass('block-box-adding');
+        // $('.block-box-add').addClass('block-box-adding')
+
+        function oversize() {
+            // $('.block-box-adding').css('height', '250px')
+            intervalOver = setInterval(function () {
+                console.log($('.block-box-adding').innerWidth())
+                if (($('.block-box-adding').innerWidth() < $('.block-box').innerWidth()) && ($('.block-box-adding').innerHeight() < $('.block-box').innerHeight())) {
+                    let num = $('.block-box-adding').innerWidth()
+                    num = num + 5
+                    let numb = num + 'px'
+                    $('.block-box-adding').css('width', numb)
+                    $('.block-box-adding').css('height', numb)
+                } else if ($('.block-box-adding').innerWidth() == $('.block-box').innerWidth() || $('.block-box-adding').innerWidth() > $('.block-box').innerWidth()) {
+                    $('.block-box-adding').css('width', $('.block-box').innerWidth() + 'px')
+                    $('.block-box-adding').css('height', $('.block-box').innerHeight() + 'px')
+                }
+
+
+                if ($('.block-box-adding').innerWidth() == $('.block-box').innerWidth()) {
+                    clearInterval(intervalOver)
+                }
+
+            }, 10)
+
+
+        }
+        oversize()
+
+    })
+
+    $(document).on('mouseout', '.block-box', function (e) {
+        // $(this).addClass('block-box-adding');
+        // $('.block-box-add').addClass('block-box-adding')
+        for (let elem of $('.block-box-adding')) {
+            function downsize() {
+                // $('.block-box-adding').css('height', '250px')
+                setInterval(function () {
+                    // console.log($('.block-box-adding').innerWidth())
+                    if (($(elem).innerWidth() > 0) && ($(elem).innerHeight() > 0)) {
+                        let num = $(elem).innerWidth()
+                        num = num - 5
+                        let numb = num - 'px'
+                        $(elem).css('width', numb)
+                        $(elem).css('height', numb)
+                    } else if ($(elem).innerWidth() == 0) {
+                        $(elem).css('width', $('.block-box').innerWidth() + 'px')
+                        $(elem).css('height', $('.block-box').innerHeight() + 'px')
+                    }
+                }, 10)
+            }
+            downsize()
+        }
+    })
+
     $(document).ready(function () {
         window.addEventListener('scroll', animOnScroll)
         let progressBar = document.querySelector('.progress-bar-start')
