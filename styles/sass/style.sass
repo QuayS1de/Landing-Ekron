@@ -13,7 +13,7 @@ body
 .page
     overflow: hidden
 .content3
-    width: 100.1%
+    width: 100.05%
     position: fixed
     z-index: 100000
     top: 0
@@ -575,3 +575,49 @@ body
         font-size: 24px
     p
         font-size: 16px
+
+.section6
+    position: relative
+    width: 100%
+    background-image: url('../../img/section6_Phone.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 150px 0
+    .pre-section6
+        margin: 0 auto
+        .pre-section6-title-section
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: absolute
+            z-index: 1000
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: #fff
+            div
+                &:first-child
+                    margin-right: 100px
+            .buttons-info
+                a
+                    display: inline-block
+                    padding: 13px 25px
+                    text-transform: capitalize
+                    margin-right: 20px
+                    background-color: #228ae6
+                    color: #fff
+                    border: none
+                    border-radius: 5px
+                    cursor: pointer
+                    transition: all .3s ease-in
+                    &:first-child
+                        background-color: #228ae6
+                        margin-right: 0
+                        border: 1px solid #fff
+                        // background-color: transparent
+                        &:hover
+                            background-color: #fff
+                            border-color: #228ae6
+                            color: #000
+                            transition: all .3s ease-out
