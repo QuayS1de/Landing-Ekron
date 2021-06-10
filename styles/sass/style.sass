@@ -621,3 +621,52 @@ body
                             border-color: #228ae6
                             color: #000
                             transition: all .3s ease-out
+
+.section7
+    width: 1200px
+    margin: 0 auto
+    .pre-section7
+        .hoverblock
+            display: flex
+            justify-content: center
+            // flex-wrap: wrap
+            width: 100%
+            align-items: center
+            li
+                list-style: none
+                position: relative
+                margin: 10px
+                overflow: hidden
+                .descr
+                    position: absolute
+                    // transform: translate(-50%, -50%)
+                    // top: 0
+                    // left: 0
+                    width: 100%
+                    height: 100%
+                    // background-color: rgba(0,0,0,.5)
+                    padding-top: 110px
+                    text-align: center
+                    color: #fff
+                    opacity: 0
+                    transition: all .5s ease
+                    &::after
+                        transform: translate(-50%, -50%)
+                        top: 50%
+                        left: 50%
+                        position: absolute
+                        content: ""
+                        width: 100%
+                        height: 100%
+                        background: rgba(49, 74, 216, 0.8)none repeat scroll 0 0
+                        transform: rotate(45deg)
+                img
+                    width: 270px
+                    height: auto
+                &:hover .descr
+                    transform: translate(-50%, -50%)
+                    top: 0
+                    left: 0px
+                    // width: 100%
+                    // height: 200%
+                    opacity: 1

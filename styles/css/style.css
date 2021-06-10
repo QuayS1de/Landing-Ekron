@@ -1037,3 +1037,67 @@ body {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
+
+.section7 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section7 .pre-section7 .hoverblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section7 .pre-section7 .hoverblock li {
+  list-style: none;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.section7 .pre-section7 .hoverblock li .descr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 110px;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.section7 .pre-section7 .hoverblock li .descr::after {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(49, 74, 216, 0.8) none repeat scroll 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.section7 .pre-section7 .hoverblock li img {
+  width: 270px;
+  height: auto;
+}
+
+.section7 .pre-section7 .hoverblock li:hover .descr {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0px;
+  opacity: 1;
+}
