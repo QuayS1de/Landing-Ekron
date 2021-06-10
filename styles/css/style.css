@@ -1041,6 +1041,7 @@ body {
 .section7 {
   width: 1200px;
   margin: 0 auto;
+  height: 2000px;
 }
 
 .section7 .pre-section7 .hoverblock {
@@ -1063,41 +1064,57 @@ body {
   overflow: hidden;
 }
 
-.section7 .pre-section7 .hoverblock li .descr {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding-top: 110px;
-  text-align: center;
-  color: #fff;
-  opacity: 0;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.section7 .pre-section7 .hoverblock li .descr::after {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(49, 74, 216, 0.8) none repeat scroll 0 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .section7 .pre-section7 .hoverblock li img {
   width: 270px;
   height: auto;
 }
 
-.section7 .pre-section7 .hoverblock li:hover .descr {
+.section7 .pre-section7 .hoverblock li .descr {
+  position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  top: 115%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section7 .pre-section7 .hoverblock li .descr::after {
   top: 0;
-  left: 0px;
+  right: 0;
+  position: absolute;
+  content: "";
+  width: 220%;
+  height: 100%;
+  background: rgba(49, 74, 216, 0.8) none repeat scroll 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.section7 .pre-section7 .hoverblock li .descr::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  top: -150%;
+  left: 0;
+  background: rgba(69, 156, 221, 0.8) none repeat scroll 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+}
+
+.section7 .pre-section7 .hoverblock li:hover .descr::after {
+  top: 62%;
+  left: 50%;
+  opacity: 1;
+}
+
+.section7 .pre-section7 .hoverblock li:hover .descr::before {
+  top: 10%;
+  left: 10%;
   opacity: 1;
 }
