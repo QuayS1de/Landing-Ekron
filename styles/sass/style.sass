@@ -530,6 +530,10 @@ body
             justify-content: space-between
             margin-top: 60px
 
+.block-box:hover .box-describe
+    transition: all 1s ease
+    opacity: 1
+
 .block-box-1, .block-box-2, .block-box-3
     position: relative
     width: 300px
@@ -571,6 +575,7 @@ body
     transform: translate(-50%, -50%)
     opacity: 1
     filter: saturate(10)
+    opacity: 0
     h4
         font-size: 24px
     p
@@ -642,6 +647,13 @@ body
                     // padding-bottom: 20px
                     border-radius: 0 0 5px 5px
                     transition: all .5s ease
+                    h4
+                        font-size: 18px
+                        font-weight: 600
+                    p
+                        font-size: 15px
+                        opacity: 0.7
+
                 li
                     list-style: none
                     position: relative
@@ -650,6 +662,31 @@ body
                     img
                         width: 270px
                         height: auto
+                    .describe-card
+                        position: absolute
+                        z-index: 10000
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        opacity: 0
+                        ul
+                            display: flex
+                            justify-content: center
+                            color: #228ae6
+                            font-size: 20px
+                            li
+                                margin: 12px
+                                padding: 8px
+                                border-radius: 0 50% 50% 50%
+                                background-color: #eee
+                                cursor: pointer
+                                transition: all .3s ease
+                                a
+                                    i
+                                        color: #000
+
+                                &:hover
+                                    transform: rotate(135deg)
                     .descr
                         position: absolute
                         transform: translate(-50%, -50%)
@@ -698,3 +735,6 @@ body
                         box-shadow: 0px 13px 24px -3px rgba(34, 60, 80, 0.87)
                     .descr
                         box-shadow: 0px 0px 21px -7px rgba(34, 60, 80, 0.87) inset
+                    .describe-card
+                        transition: all 1s ease
+                        opacity: 1
