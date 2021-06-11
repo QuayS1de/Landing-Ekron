@@ -10,7 +10,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.4px;
   line-height: 28px;
-  height: 4000px;
+  height: 10000px;
 }
 
 .page {
@@ -1368,6 +1368,10 @@ body {
 
 .section10 {
   width: 100%;
+  background-image: url("../../img/section6_Phone.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .section10 .pre-section10 {
@@ -1385,18 +1389,22 @@ body {
 
 .section10 .pre-section10 .header-slider .slider4 .slider-item {
   margin: 10px;
+  color: #fff;
 }
 
 .section10 .pre-section10 .header-slider .slider4 .slider-item .img-svg-line {
   background-image: url("../../img/Component1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px;
-  margin: 60px;
+  padding: 40px 0;
+  padding-left: 40px;
+  font-weight: 800;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  color: #000;
+  font-size: 14px;
 }
 
 .section10 .pre-section10 .header-slider .slider4 .slider-item .img-svg-line:active {
@@ -1406,8 +1414,31 @@ body {
 
 .section10 .pre-section10 .header-slider .slider4 .slider-item h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .section10 .pre-section10 .header-slider .slider4 .slider-item h3 {
   text-align: center;
+  color: #228ae6;
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item .img-portrait {
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item .img-portrait1 {
+  background-image: url(../../img/img-portrait1.jpg);
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item .img-portrait2 {
+  background-image: url(../../img/img-portrait2.jpg);
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item .img-portrait3 {
+  background-image: url(../../img/img-portrait3.jpg);
 }
