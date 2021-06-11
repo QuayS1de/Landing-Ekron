@@ -51,6 +51,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
         });
 
+        $('.slider3').slick({
+            arrows: true, //если не нужны по дизайну
+            dots: false,
+            adaptiveHeight: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    adaptiveHeight: false,
+                    adaptiveWidth: true,
+                }
+            }]
+
+        });
+
+
+
         /*Настройка блока цветных кнопок*/
         $(document).on('click', '.choose-your-color', function (e) {
             let dataColor = $(e.target).attr('data-color')
