@@ -1048,7 +1048,6 @@ body {
 .section7 .pre-section7 {
   width: 1200px;
   margin: 0 auto;
-  height: 2000px;
 }
 
 .section7 .pre-section7 .hoverblock {
@@ -1204,4 +1203,105 @@ body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 1;
+}
+
+.section8 {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.section8 .pre-section8 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section8 .pre-section8 .pricingtable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block {
+  background-color: #fff;
+  text-align: center;
+  min-width: 350px;
+  min-height: 600px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-header {
+  color: #fff;
+  background-color: #228ae6;
+  padding: 25px;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-header h3 {
+  font-size: 30px;
+  margin: 0 0 30px 0;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-header h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-header p {
+  font-size: 18px;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-describe {
+  background-color: #fff;
+  margin-top: 60px;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-describe ul {
+  margin-bottom: 20px;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-describe ul li {
+  border-bottom: 1px solid #c5d2d4;
+  opacity: .65;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block .pricingtable-block-describe ul li:last-child {
+  border-bottom: none;
+}
+
+.section8 .pre-section8 .pricingtable .pricingtable-block:hover {
+  -webkit-box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.6);
+}
+
+.buttons-info-helper {
+  padding: 10px 20px;
+  background: #228ae6;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.buttons-info-helper:hover {
+  background-color: #0f0f0f;
 }
