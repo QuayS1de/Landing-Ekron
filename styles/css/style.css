@@ -1365,3 +1365,49 @@ body {
   font-weight: 600;
   text-transform: none;
 }
+
+.section10 {
+  width: 100%;
+}
+
+.section10 .pre-section10 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section10 .pre-section10 .header-slider .slider4 {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item {
+  margin: 10px;
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item .img-svg-line {
+  background-image: url("../../img/Component1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  margin: 60px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item .img-svg-line:active {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item h2 {
+  text-align: center;
+}
+
+.section10 .pre-section10 .header-slider .slider4 .slider-item h3 {
+  text-align: center;
+}
