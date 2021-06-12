@@ -1466,13 +1466,23 @@ body {
   margin: 0 auto;
 }
 
-.section11 .form {
+.section11 .pre-section11 .form-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.section11 .pre-section11 .form-contact .form {
   width: 100%;
   border: 2px solid #eee;
   padding: 10px;
 }
 
-.section11 .form .form-name-mail .form-group {
+.section11 .pre-section11 .form-contact .form .form-name-mail .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1482,7 +1492,7 @@ body {
   margin-bottom: 10px;
 }
 
-.section11 .form .form-name-mail .form-group .input {
+.section11 .pre-section11 .form-contact .form .form-name-mail .form-group .input {
   width: 100%;
   margin: 10px 20px;
   border: none;
@@ -1490,11 +1500,11 @@ body {
   padding-bottom: 10px;
 }
 
-.section11 .form .form-name-message .form-group {
+.section11 .pre-section11 .form-contact .form .form-name-message .form-group {
   margin: 20px 20px 10px 20px;
 }
 
-.section11 .form .form-name-message .form-group .input {
+.section11 .pre-section11 .form-contact .form .form-name-message .form-group .input {
   width: 100%;
   min-height: 140px;
   border: none;
@@ -1502,10 +1512,34 @@ body {
   resize: vertical;
 }
 
-.section11 .form .form-name-message .buttons-info-helper {
+.section11 .pre-section11 .form-contact .form .form-name-message .buttons-info-helper {
   border-radius: 0;
   outline: none;
   border: none;
   font-weight: 600;
   margin: 10px 20px;
+}
+
+.section11 .pre-section11 .form-contact .form-contact-info {
+  border: 2px solid #eee;
+  margin-left: 10px;
+  padding: 15px 20px;
+}
+
+.section11 .pre-section11 .form-contact .form-contact-info .contact-office {
+  margin-top: 20px;
+}
+
+.section11 .pre-section11 .form-contact .form-contact-info .contact-office span {
+  display: block;
+  margin-top: 20px;
+}
+
+.section11 .pre-section11 .form-contact .form-contact-info .contact-office span i {
+  margin-right: 15px;
+  color: #228ae6;
+}
+
+.section11 .pre-section11 .form-contact .form-contact-info .contact-office .span-clear {
+  margin-top: 10px;
 }
