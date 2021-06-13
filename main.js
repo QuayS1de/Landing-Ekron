@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
             adaptiveHeight: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
             responsive: [{
                 breakpoint: 1000,
                 settings: {
@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // adaptiveWidth: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            // autoplay: true,
-            autoplaySpeed: 3000,
+            autoplay: true,
+            autoplaySpeed: 5000,
             responsive: [{
                 breakpoint: 1000,
                 settings: {
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
     oversize('block-box-3', 'box-3')
 
 
-
+    new WOW().init();
 
 
 

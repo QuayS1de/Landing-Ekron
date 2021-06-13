@@ -1648,11 +1648,13 @@ body {
   width: 100%;
   padding-top: 0;
   margin: 0 auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer {
   width: 100%;
-  margin-bottom: 120px;
+  margin: 120px 0;
 }
 
 .footer .pre-footer {
