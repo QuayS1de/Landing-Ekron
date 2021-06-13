@@ -238,4 +238,29 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    /*Плавная прокрутка страницы*/
+
+    function anchorIntoView(idAnchor) {
+        let link = 'li[href=' + idAnchor + ']'
+        const anchor = document.querySelector(link);
+        anchor.addEventListener('click', function (event) {
+            event.preventDefault();
+            const blockID = anchor.getAttribute('href');
+            document.querySelector('' + blockID).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            })
+        })
+    }
+    anchorIntoView('"#home"')
+    anchorIntoView('"#about"')
+    anchorIntoView('"#service"')
+    anchorIntoView('"#portfolio"')
+    anchorIntoView('"#team"')
+    anchorIntoView('"#pricing"')
+    anchorIntoView('"#blog"')
+    anchorIntoView('"#testimonials"')
+    anchorIntoView('"#contact"')
+    /*----------------------------*/
 })
