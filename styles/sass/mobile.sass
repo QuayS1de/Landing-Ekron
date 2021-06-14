@@ -6,6 +6,39 @@
             .nav_logo
                 width: 1%
 
+@media (max-width: 1200px)
+    .section7
+        .pre-section7
+            .hoverblock
+                display: grid
+                grid-template-columns: repeat(auto-fill, minmax(500px, 2fr))
+                >div
+                    margin: 0
+                    li
+                        .descr
+                            width: 200%
+                            height: 100%
+                            transition: all 0.5s ease
+                            &::after
+                                top: 0
+                                right: 100%
+                                width: 100%
+                                height: 100%
+                                transform: rotate(90deg)
+                                transition: all .5s ease
+                            &::before
+                                width: 100%
+                                height: 100%
+                                transform: rotate(90deg)
+                                transition: all .5s ease
+                    &:hover
+                        .descr::after
+                            top: 0
+                            right: 30%
+                        .descr::before
+                            top: 0
+                            left: 30%
+
 @media (max-width: 1060px)
     .content
         .nav
@@ -19,8 +52,15 @@
             .pre-section2__blocks-placement
                 grid-template-columns: repeat(auto-fill, minmax(350px, 2fr))
 
+@media (max-width: 945px)
+    .section
+        .pre-section1
+            .pre-section1__blocks-shadow
+                // margin: 0 auto
+                grid-template-columns: repeat(auto-fill, minmax(100%, 2fr))
+                grid-gap: 20px
+
 @media (max-width: 860px)
-    .pre-section1__blocks-shadow
     .section
         .pre-section1
             .pre-section1__our-company-card
@@ -33,6 +73,18 @@
                     margin-bottom: 20px
                 .pre-section1__our-company-card__right-side
                     height: 300px
+
+    .section4
+        .pre-section4
+            .pre-section4__stats-block
+                flex-direction: column
+                .describe__stats-block
+                    margin: 0 auto
+                    max-width: 80%
+                .wrapper-content
+                    max-width: 80%
+                    margin: 0 auto
+                    .progress-bar
 
     .section5
         .pre-section5

@@ -223,17 +223,15 @@ body
         align-items: center
         .pre-section1__blocks-shadow
             width: 100%
-            display: flex
-            justify-content: space-between
-            align-items: center
+            display: grid
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+            grid-gap: 20px
             div
                 padding: 12px 18px
-                margin-right: 30px
+                // margin-right: 30px
                 text-align: center
                 box-shadow: 0px 0px 15px rgba(0,0,0,.1)
-                display: flex
-                flex-direction: column
-                flex-wrap: nowrap
+                flex-wrap: wrap
                 &:last-child
                     margin-right: 0
                 i
@@ -617,7 +615,7 @@ body
 
 .section7
     .pre-section7
-        width: 1200px
+        max-width: 1200px
         margin: 0 auto
         .hoverblock
             display: flex
