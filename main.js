@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true,
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: 3100,
             responsive: [{
                 breakpoint: 1000,
@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesToScroll: 1,
             // autoplay: true,
             responsive: [{
-                breakpoint: 1000,
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 1,
-                }
+                    slidesToShow: 2,
+                },
+
             }, {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
                     adaptiveHeight: false,

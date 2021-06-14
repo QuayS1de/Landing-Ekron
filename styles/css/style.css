@@ -1161,9 +1161,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section8 .pre-section8 .pricingtable .pricingtable-block {
+  margin: 0 auto;
   background-color: #fff;
   text-align: center;
   min-width: 350px;
@@ -1655,15 +1658,10 @@ body {
 }
 
 .footer .pre-footer .footer-list-link-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
 }
 
 .footer .pre-footer .footer-list-link-social li {

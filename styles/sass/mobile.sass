@@ -47,6 +47,15 @@
                     padding: 8px
                     a
                         font-size: 12px
+@media (max-width: 1049px)
+    .section8
+        .pre-section8
+            .pricingtable
+                .pricingtable-block
+                    margin-bottom: 30px
+                    &:last-child
+                        margin-bottom: 0
+
     .section2
         .pre-section2
             .pre-section2__blocks-placement
@@ -71,9 +80,21 @@
                 text-align: center
                 .pre-section1__our-company-card__left-side
                     margin-bottom: 20px
+                    align-items: center
                 .pre-section1__our-company-card__right-side
                     height: 300px
 
+    .section11
+        .pre-section11
+            .form-contact
+                flex-direction: column
+                .form
+                    .form-name-message
+                        .buttons-info-helper
+                            width: 100%
+                            margin: 0
+                .form-contact-info
+                    text-align: center
     .section4
         .pre-section4
             .pre-section4__stats-block
@@ -81,6 +102,9 @@
                 .describe__stats-block
                     margin: 0 auto
                     max-width: 80%
+                    h4
+                        text-align: center
+                        font-size: 22px
                 .wrapper-content
                     max-width: 80%
                     margin: 0 auto
@@ -93,3 +117,155 @@
                 margin: 0 auto
                 justify-content: center
                 align-items: center
+
+    .header-slider
+        .slider
+            .slider-item
+                .pic1
+                    height: 850px
+                    width: 100%
+                    .slider-item__pic1__title-item
+                        text-align: center
+                        padding-top: 300px
+                .pic2
+                    height: 850px
+                    width: 100%
+                    .slider-item__pic2__title-item
+                        text-align: center
+                        max-width: 600px
+                        margin-left: 0
+                        margin-right: 0
+                        padding-top: 300px
+                .pic3
+                    height: 850px
+                    width: 100%
+                    text-align: center
+                    .slider-item__pic3__title-item
+                        text-align: center
+                        max-width: 700px
+                        padding-right: 0
+                        padding-top: 300px
+                        margin-left: 0
+                        margin-right: 0
+
+@media (max-width: 630px)
+
+    .section
+        .pre-section1
+            .pre-section1__our-company-card
+                flex-direction: column
+                width: 60%
+                margin: 0 auto
+                margin-top: 90px
+                text-align: center
+                .pre-section1__our-company-card__left-side
+                    margin-bottom: 20px
+                    align-items: center
+                    >div
+                        &:last-child
+                            flex-direction: column
+                            .desribe-card-right
+                                margin-top: 15px
+                                ul
+                                    margin-top: 0
+
+    .section10
+        .pre-section10
+            .header-slider
+                .slider4
+                    .slider-item
+                        .img-svg-line
+                            max-width: 70%
+                            height: auto
+                            margin: 0 auto
+
+@media (max-width: 500px)
+    .choose-color-blocks-fixed
+        display: none
+
+    .header-slider
+        .slider
+            .slider-item
+                .pic1
+                    height: 750px
+                    width: 100%
+                    .slider-item__pic1__title-item
+                        padding-top: 230px
+                .pic2
+                    height: 750px
+                    .slider-item__pic2__title-item
+                        padding-top: 150px
+                .pic3
+                    height: 750px
+                    .slider-item__pic3__title-item
+                        padding-top: 150px
+
+@media (max-width: 400px)
+    .section3
+        .pre-section3
+            .slider2
+                .slider-item
+                    img
+                        width: 200px
+                        height: auto
+                        user-select: none
+
+    .footer
+        .pre-footer
+            .footer-list-link-social
+                grid-template-columns: repeat(3, 2fr)
+
+@media (max-width: 320px)
+    .section5
+        .pre-section5
+            .boxes
+                .block-box
+                    width: 200px
+                    height: 200px
+    .header-slider
+        .slider
+            .slider-item
+                .title-item
+                    .buttons-info
+                        display: flex
+                        flex-direction: column
+                        width: 80%
+                        margin: 0 auto
+                        a
+                            margin-right: 0
+                            &:first-child
+                                margin-bottom: 10px
+                .pic1
+                    height: 850px
+                    width: 100%
+                    .slider-item__pic1__title-item
+                        padding-top: 230px
+                .pic2
+                    height: 850px
+                    .slider-item__pic2__title-item
+                        padding-top: 150px
+                .pic3
+                    height: 850px
+                    .slider-item__pic3__title-item
+                        padding-top: 150px
+
+    .section10
+        .pre-section10
+            .header-slider
+                .slider4
+                    .slider-item
+                        .img-svg-line
+                            p
+                                padding-bottom: 40px
+
+    .section12
+        .pre-section12
+            .title-section
+                form
+                    flex-direction: column
+                    input
+                        width: 100%
+                        text-align: center
+                        margin: 0 auto
+                    button
+                        width: 100%
