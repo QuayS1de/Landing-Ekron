@@ -106,17 +106,26 @@ document.addEventListener('DOMContentLoaded', function () {
         $(document).on('click', '.choose-your-color', function (e) {
             let dataColor = $(e.target).attr('data-color')
             $('.buttons-info a:first-child').css('backgroundColor', dataColor)
-            $('.section').css('backgroundColor', dataColor)
-            // $('.buttons-info a:first-child').addClass('hover-bg')
-            function bgClassName(className) {
+            $('.buttons-info-helper').css('backgroundColor', dataColor)
+            $('.pre-section2__blocks-placement >div i').css('color', dataColor)
+            $('.describe-card ul li').css('backgroundColor', dataColor)
+            $('.progress-done').css('backgroundColor', dataColor)
+            $('.nav_logo').css('color', dataColor)
+            $('.active').css('color', dataColor)
+            $('.choose-color-cog').css('backgroundColor', dataColor)
+            $('.pre-footer h1').css('color', dataColor)
+
+            function bgClassName(className, parametr1, parametr2) {
                 let name = '.' + className;
                 $(name).hover(function () {
-                    $(this).css('backgroundColor', '#fff')
+                    $(this).css(parametr1, parametr2)
                 }, function () {
-                    $(this).css('backgroundColor', dataColor)
+                    $(this).css(parametr1, dataColor)
                 })
             }
-            bgClassName('buttons-info a:first-child')
+            bgClassName('buttons-info a:first-child', 'backgroundColor', '#fff')
+            bgClassName('buttons-info-helper', 'backgroundColor', '#000')
+            bgClassName('nav_list li a', 'color', '#fff')
         })
 
 

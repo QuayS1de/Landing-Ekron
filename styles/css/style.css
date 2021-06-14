@@ -439,6 +439,13 @@ body {
 
 .section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right ul li {
   margin: 20px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side > div:last-child .desribe-card-right ul li a {
@@ -503,6 +510,8 @@ body {
   font-size: 55px;
   padding: 15px 0;
   color: #228ae6;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .section2 .pre-section2 .pre-section2__blocks-placement > div h1 {
@@ -535,6 +544,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -10;
   padding: 10px 10px 5px 10px;
   background-color: #228ae6;
   cursor: pointer;
@@ -926,6 +936,7 @@ body {
 }
 
 .section6 .pre-section6 {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -933,9 +944,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1650,6 +1661,8 @@ body {
   user-select: none;
   cursor: pointer;
   margin-bottom: 10px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .footer .pre-footer p a {
