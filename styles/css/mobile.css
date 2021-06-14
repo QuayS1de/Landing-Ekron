@@ -1,0 +1,54 @@
+@media (max-width: 1300px) {
+  .content .nav .nav_list {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .content .nav .nav_logo {
+    width: 1%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .content .nav .nav_list li {
+    padding: 8px;
+  }
+  .content .nav .nav_list li a {
+    font-size: 12px;
+  }
+  .section2 .pre-section2 .pre-section2__blocks-placement {
+    -ms-grid-columns: (minmax(350px, 2fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .section .pre-section1 .pre-section1__our-company-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 90px;
+    text-align: center;
+  }
+  .section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__left-side {
+    margin-bottom: 20px;
+  }
+  .section .pre-section1 .pre-section1__our-company-card .pre-section1__our-company-card__right-side {
+    height: 300px;
+  }
+  .section5 .pre-section5 .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
