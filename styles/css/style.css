@@ -60,7 +60,7 @@ body {
   cursor: pointer;
 }
 
-.content .nav .nav_list {
+.nav_list {
   margin-left: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +73,7 @@ body {
           justify-content: space-between;
 }
 
-.content .nav .nav_list li {
+.nav_list li {
   padding: 15px;
   background-color: transparentize;
   cursor: pointer;
@@ -81,19 +81,19 @@ body {
   transition: color .15s ease;
 }
 
-.content .nav .nav_list li:hover {
+.nav_list li:hover {
   color: #337ab7;
   -webkit-transition: color .1s ease;
   transition: color .1s ease;
 }
 
-.content .nav .nav_list li a {
+.nav_list li a {
   font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.content .nav .nav_list li a.active {
+.nav_list li a.active {
   color: #337ab7;
 }
 

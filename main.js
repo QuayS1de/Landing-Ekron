@@ -273,4 +273,66 @@ document.addEventListener('DOMContentLoaded', function () {
     anchorIntoView('"#testimonials"')
     anchorIntoView('"#contact"')
     /*----------------------------*/
+
+    if (window.innerWidth < 860) {
+        let contain = '<i class="fas fa-bars"></i>';
+        let navClone = $('.nav_list').clone();
+        navClone.appendTo('.content');
+        navClone.addClass('cloneNavList')
+        for (let elem of $('.cloneNavList li')) {
+            $(elem).attr('href', $(elem).attr('href') + 1)
+        }
+        $('.nav .nav_list').remove()
+
+        $('.nav').append(contain)
+        $('.nav i').addClass('sidebar');
+        $('.sidebar').css('margin', '5px')
+        $('.sidebar').css('fontSize', '22px')
+        $('.sidebar').css('color', '#2280e6')
+        $('.sidebar').css('padding', '10px')
+        $('.sidebar').css('border', '1px solid #f1f1f1')
+        $('.sidebar').css('border-radius', '5px')
+        $('.sidebar').css('cursor', 'pointer')
+        $('.nav_logo').css('marginLeft', '15px')
+        $('.cloneNavList').css('flex-wrap', 'wrap')
+        $('.cloneNavList').css('marginLeft', '0')
+        $('.cloneNavList').css('color', '#fff')
+
+        $(document).on('click', '.sidebar', function () {
+            $('.cloneNavList').toggleClass('list-visible')
+        })
+        $('#home').attr('id', 'home1')
+        $('#about').attr('id', 'about1')
+        $('#service').attr('id', 'service1')
+        $('#portfolio').attr('id', 'portfolio1')
+        $('#team').attr('id', 'team1')
+        $('#pricing').attr('id', 'pricing1')
+        $('#blog').attr('id', 'blog1')
+        $('#testimonials').attr('id', 'testimonials1')
+        $('#contact').attr('id', 'contact1')
+
+        function anchorIntoView1(idAnchor) {
+            let link = 'li[href=' + idAnchor + ']'
+            const anchor = document.querySelector(link);
+            anchor.addEventListener('click', function (event) {
+                event.preventDefault();
+                const blockID = anchor.getAttribute('href');
+                document.querySelector('' + blockID).scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                })
+            })
+        }
+
+        anchorIntoView1('"#home1"')
+        anchorIntoView1('"#about1"')
+        anchorIntoView1('"#service1"')
+        anchorIntoView1('"#portfolio1"')
+        anchorIntoView1('"#team1"')
+        anchorIntoView1('"#pricing1"')
+        anchorIntoView1('"#blog1"')
+        anchorIntoView1('"#testimonials1"')
+        anchorIntoView1('"#contact1"')
+
+    }
 })
